@@ -3,8 +3,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.*;
 
 public class DeckTest {
 
@@ -33,5 +32,15 @@ public class DeckTest {
         deck.shuffleCards();
         Card shuffledFirstCard = deck.getCard(0);
         assertNotEquals(firstCard, shuffledFirstCard);
+    }
+
+    @Test
+    public void cardCanBeDealt(){
+        deck.populateDeck();
+        deck.shuffleCards();
+        Card dealtCard = deck.dealCard();
+        assertNotNull(dealtCard);
+        assertEquals(51, deck.countCards());
+
     }
 }
