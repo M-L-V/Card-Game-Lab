@@ -19,4 +19,9 @@ public class DeckTest {
         assertEquals(0, deck.countCards());
     }
 
+    @Test
+    public void deckCanBePopulated(){
+        deck.populateDeck();
+        assertEquals(52, deck.countCards());
+    }
 }

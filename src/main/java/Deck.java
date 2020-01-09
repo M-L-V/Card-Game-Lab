@@ -11,4 +11,13 @@ public class Deck {
     public int countCards() {
         return cards.size();
     }
+
+    public void populateDeck() {
+        for (SuitType suit : SuitType.values()) {
+            for (RankType rank : RankType.values()) {
+                Card card = new Card(suit,rank);
+                cards.add(card);
+            }
+        }
+    }
 }
