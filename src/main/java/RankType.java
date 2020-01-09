@@ -19,7 +19,7 @@ public enum RankType {
         this.value = value;
     }
 
-    private int getValue(){
+    public int getValue(){
         return this.value;
     }
 }
