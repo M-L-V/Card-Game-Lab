@@ -18,4 +18,8 @@ public class CardTest {
         assertEquals(SuitType.SPADES, card.getSuit());
     }
 
+    @Test
+    public void canGetRank(){
+        assertEquals(RankType.ACE, card.getRank());
+    }
 }

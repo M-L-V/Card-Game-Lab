@@ -12,4 +12,8 @@ public class Card {
     public Object getSuit() {
         return this.suit;
     }
+
+    public RankType getRank() {
+        return this.rank;
+    }
 }
